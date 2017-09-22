@@ -11,7 +11,7 @@ http.createServer(function(request,response){
 
 	//send the response body
 	response.end('Server running successfully');
-}).listen(8099);
+}).listen(process.env.PORT || 8099);
 
 console.log("server running at localhost:8099");
 
