@@ -5,7 +5,8 @@ const express = require('express');
 const app = express()
 
 app.get('/',function(request,response){
-	response.send('Hello world ##############');
+	response.sendFile('views/index.html');
+	// response.send('Hello world ##############');
 });
 
 app.listen(process.env.PORT||8099,function(){
