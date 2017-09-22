@@ -10,7 +10,7 @@ http.createServer(function(request,response){
 	response.writeHead(200,{'Content-Type':'text/plain'});
 
 	//send the response body
-	response.end('Hello World');
+	response.end('Server running successfully');
 }).listen(8081);
 
 console.log("server running at localhost:8081");
