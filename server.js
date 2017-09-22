@@ -1,6 +1,8 @@
 //import required modules
 
 var http = require('http');
+const express = require('express');
+const app = express()
 
 //create a server instance and binding at port 8081
 http.createServer(function(request,response){
@@ -11,6 +13,7 @@ http.createServer(function(request,response){
 
 	//send the response body
 	response.end('Server running successfully');
+	
 }).listen(process.env.PORT || 8099);
 
 console.log("server running at localhost:8099");
